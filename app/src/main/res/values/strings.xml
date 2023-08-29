@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tenretni</string>
+    <string name="menu_tickets">Tickets</string>
+    <string name="menu_gateways">Gateways</string>
+    <string name="menu_networks">Networks</string>
+    <string name="apiErrorMessage">Error while retriving the data from the server.</string>
+    <string name="gateway_latency" translatable="false">%d ns</string>
+    <string name="gateway_speed" translatable="false">%.3f Ebps</string>
+    <string name="customer_name" translatable="false">%s %s</string>
+    <string name="ticket_number" translatable="false">Ticket %s</string>
+    <string name="gateway_number" translatable="false">Gateway %s</string>
+    <string name="install">Install</string>
+    <string name="solve">Solve</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="signal_quality" translatable="false">%d dBm</string>
+    <string name="kernel_revision">Kernel revision %d</string>
+    <string name="kernel_version">Version %s</string>
+    <string name="update_button">Update</string>
+    <string name="reboot_button">Reboot</string>
+    <string name="gateway_ssid" translatable="false">SSID: %s</string>
+    <string name="gateway_pin" translatable="false">PIN: %s</string>
+    <string name="open">Open</string>
+    <string name="title_activity_loading" translatable="false">LoadingActivity</string>
+    <string name="oliver_nadeau" translatable="false">Oliver Nadeau</string>
+    <string name="tom_strohmeier" translatable="false">Tom Strohmeier</string>
+    <string name="tenretni_2023" translatable="false">Tenretni - 2023®</string>
+    <string name="loading_progression">Loading %d/10 …</string>
+</resources>

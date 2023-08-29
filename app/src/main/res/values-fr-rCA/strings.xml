@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tenretni</string>
+    <string name="menu_tickets">Ticket</string>
+    <string name="menu_gateways">Passerelles</string>
+    <string name="menu_networks">Réseaux</string>
+    <string name="apiErrorMessage">Une erreure est survenue lors de la collecte des données au serveur.</string>
+    <string name="install">Installer</string>
+    <string name="solve">Résourdre</string>
+    <string name="kernel_revision">Révision du noyau %d</string>
+    <string name="kernel_version">Version %s</string>
+    <string name="update_button">Mettre à jour</string>
+    <string name="reboot_button">Redémarrer</string>
+    <string name="open">Ouvert</string>
+    <string name="loading_progression">Chargement %d/10 …</string>
+</resources>

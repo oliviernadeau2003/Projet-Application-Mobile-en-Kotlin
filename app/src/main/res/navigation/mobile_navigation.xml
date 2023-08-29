@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_tickets">
+
+    <fragment
+        android:id="@+id/nav_tickets"
+        android:name="ca.qc.cstj.tenretni.ui.tickets.list.TicketsListFragment"
+        android:label="@string/menu_tickets"
+        tools:layout="@layout/fragment_list_tickets" >
+        <action
+            android:id="@+id/action_nav_tickets_to_ticketFragment"
+            app:destination="@id/ticketFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gateways"
+        android:name="ca.qc.cstj.tenretni.ui.gateways.list.GatewaysListFragment"
+        android:label="@string/menu_gateways"
+        tools:layout="@layout/fragment_list_gateways" >
+        <action
+            android:id="@+id/action_nav_gateways_to_gatewayFragment"
+            app:destination="@id/gatewayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_networks"
+        android:name="ca.qc.cstj.tenretni.ui.networks.NetworkFragment"
+        android:label="@string/menu_networks"
+        tools:layout="@layout/fragment_networks" />
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="ca.qc.cstj.tenretni.ui.tickets.details.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <argument
+            android:name="href"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_ticketFragment_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+        <action
+            android:id="@+id/action_ticketFragment_to_gatewayFragment"
+            app:destination="@id/gatewayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gatewayFragment"
+        android:name="ca.qc.cstj.tenretni.ui.gateways.details.GatewayFragment"
+        android:label="GatewayFragment"
+        tools:layout="@layout/fragment_gateway">
+        <argument
+            android:name="href"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="ca.qc.cstj.tenretni.ui.map.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" >
+        <argument
+            android:name="position"
+            app:argType="com.google.android.gms.maps.model.LatLng" />
+        <argument
+            android:name="customerName"
+            app:argType="string" />
+    </activity>
+    <activity
+        android:id="@+id/loadingActivity"
+        android:name="ca.qc.cstj.tenretni.ui.loading.LoadingActivity"
+        android:label="activity_loading"
+        tools:layout="@layout/activity_loading" />
+</navigation>
