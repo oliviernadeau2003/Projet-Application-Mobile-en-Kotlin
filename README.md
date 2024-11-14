@@ -58,6 +58,6 @@ L'application développée est conçue pour répondre aux besoins d'une entrepri
 
 ## Auteur
 
-Ce projet a été réalisé par Olivier Nadeau dans le cadre de Application Mobile au Cégep de Saint-Jérome.
+Ce projet a été réalisé par Olivier Nadeau dans le cadre de Application Mobile au Cégep de Saint-Jérome. [Collaboration avec Tom Strohmeier]
 
 N'hésitez pas à me contacter pour toute question ou commentaire.
